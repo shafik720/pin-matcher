@@ -11,6 +11,12 @@
             text-align: center;
             font-weight: bold;
         }
+        #error{
+            display: none;
+        }
+        #success{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -48,7 +54,7 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button id="submit" type="submit" class="submit-btn">Submit</button>
                                 <p class="action-left">3 try left</p>
                             </div>
                     </div>
@@ -56,8 +62,8 @@
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="error" class="notify"> <span style="color:red">❌</span>  Pin Didn't Match, Please try again</p>
+            <p id="success" class="notify"> <span style="color:green">✅ </span> Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
 
